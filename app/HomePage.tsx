@@ -10,6 +10,7 @@ import Contact from "@/components/Contact";
 import CallToAction from "@/components/CallToAction";
 import Header from "./Header";
 import Footer from "./Footer";
+import Certifications from "@/components/certifications/Certifications";
 
 interface Props {
     data: data,
@@ -25,8 +26,10 @@ const HomePage = ({ data }: Props) => {
             <Skills skillData={data.skills} />
             <Projects projectsData={data.projects} />
             <Experiences experienceData={data.experiences} educationData={data.educations} />
+            <Certifications />
             <Contact />
-            <CallToAction />
+            
+            {/* <CallToAction /> */}
             <Footer socials={data.socials} name={data.main.name} />
         </>
     )
