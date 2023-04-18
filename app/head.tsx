@@ -9,7 +9,7 @@ export default function Head() {
       <meta property="og:description"
         content="I'm Yashdeep Raj, full-stack developer based in Pune, India. My journey in web development began during my first year of college." />
       <meta property="og:url" content="https://dev.auedbaki.com" />
-      <meta property="og:image" content="https://dev.auedbaki.com/portfolio-fork.png" />
+      <meta property="og:image" content="https://dev.auedbaki.com/mylogo.webp" />
       <link rel="canonical" href="https://dev.auedbaki.com" />
       <meta name="author" content="Yashdeep Raj" />
       <meta name="language" content="English" />
