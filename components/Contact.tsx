@@ -29,7 +29,7 @@ const Contact = () => {
 
         setLoading(true);
         ///api/client/contactus-dev
-        axios.post("https://auedbaki.com/api/client/contactus-dev", {
+        axios.post("/api/client/contactus-dev", {
             name: values.name,
             email: values.email,
             message: values.message,
