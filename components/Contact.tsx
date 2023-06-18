@@ -9,7 +9,8 @@ import 'react-toastify/dist/ReactToastify.min.css';
 import contactAnimation from './../assets/contact.json';
 
 const Contact = () => {
-
+    const website = "https://dev.auedbaki.com"
+    const subject = "Message from Auedbaki Dev"
     const [values, setValues] = useState({
         name: "",
         email: "",
@@ -27,16 +28,19 @@ const Contact = () => {
         }
 
         setLoading(true);
-        axios.post("/api/mail", {
+        ///api/client/contactus-dev
+        axios.post("https://auedbaki.com/api/client/contactus-dev", {
             name: values.name,
             email: values.email,
             message: values.message,
+            website: website,
+            subject: subject
         }).then((res) => {
             if (res.status === 200) {
                 setValues({ name: "", email: "", message: "" });
                 setLoading(false);
                 setSuccess(true);
-                toast.success(res.data.message)
+                toast.success("Your Message sent successfully.")
             } else {
                 setLoading(false);
                 toast.error(res.data.message)
